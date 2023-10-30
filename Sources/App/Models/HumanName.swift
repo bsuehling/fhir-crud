@@ -7,8 +7,8 @@ final class HumanName: Model, Content {
     @ID(key: .id)
     var id: UUID?
 
-    @Parent(key: "use")
-    var use: HumanNameUse?
+    @OptionalEnum(key: "use")
+    var use: NameUse?
 
     @Field(key: "text")
     var text: String?
@@ -25,7 +25,7 @@ final class HumanName: Model, Content {
     @Field(key: "suffix") // TODO: 0..*
     var suffix: String?
 
-    @parent(key: "period_id")
+    @OptionalParent(key: "period_id")
     var period: Period?
 
     init() {}

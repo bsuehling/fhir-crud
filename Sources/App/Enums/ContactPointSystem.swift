@@ -1,4 +1,4 @@
-enum ContactPointSystem {
+enum ContactPointSystem: String, Codable {
     case phone
     case fax
     case email

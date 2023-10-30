@@ -1,4 +1,4 @@
-enum NameUse {
+enum NameUse: String, Codable {
     case usual
     case official
     case temp

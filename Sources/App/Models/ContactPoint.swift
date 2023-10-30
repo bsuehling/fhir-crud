@@ -7,19 +7,19 @@ final class ContactPoint: Model, Content {
     @ID(key: .id)
     var id: UUID?
 
-    @Enum(key: "system")
+    @OptionalEnum(key: "system")
     var system: ContactPointSystem?
 
     @Field(key: "value")
     var value: String?
 
-    @Enum(key: "use")
+    @OptionalEnum(key: "use")
     var use: ContactPointUse?
 
     @Field(key: "rank")
     var rank: Int?
 
-    @Parent(key: "period_id")
+    @OptionalParent(key: "period_id")
     var period: Period?
 
     init() {}

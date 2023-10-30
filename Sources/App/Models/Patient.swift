@@ -10,13 +10,13 @@ final class Patient: Model, Content {
     @Field(key: "active")
     var active: Bool?
 
-    @Parent(key: "name_id")
+    @OptionalParent(key: "name_id")
     var name: HumanName?
 
-    @Parent(key: "contact_point_id")
+    @OptionalParent(key: "contact_point_id")
     var telecom: ContactPoint?
 
-    @Enum(key: "gender")
+    @OptionalEnum(key: "gender")
     var gender: AdministrativeGender?
 
     @Field(key: "birth_date")

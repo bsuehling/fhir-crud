@@ -1,4 +1,4 @@
-enum ContactPointUse {
+enum ContactPointUse: String, Codable {
     case home
     case work
     case temp

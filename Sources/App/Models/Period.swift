@@ -15,10 +15,10 @@ final class Period: Model, Content {
 
     init() {}
 
-    init(id: UUID? = nil, start: Date? = Date, end: Date? = Date
+    init(id: UUID? = nil, start: Date? = nil, end: Date? = nil
     ) {
         self.id = id
         self.start = start
-        self.end
+        self.end = end
     }
 }
