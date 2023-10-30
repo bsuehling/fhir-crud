@@ -16,14 +16,14 @@ final class HumanName: Model, Content {
     @Field(key: "family")
     var family: String?
 
-    @Field(key: "given") // TODO: 0..*
-    var given: String?
+    @Field(key: "given")
+    var given: [String]
 
-    @Field(key: "prefix") // TODO: 0..*
-    var prefix: String?
+    @Field(key: "prefix")
+    var prefix: [String]
 
-    @Field(key: "suffix") // TODO: 0..*
-    var suffix: String?
+    @Field(key: "suffix")
+    var suffix: [String]
 
     @OptionalParent(key: "period_id")
     var period: Period?
@@ -34,9 +34,9 @@ final class HumanName: Model, Content {
         id: UUID? = nil,
         text: String? = nil,
         family: String? = nil,
-        given: String? = nil,
-        prefix: String? = nil,
-        suffix: String? = nil,
+        given: [String] = [],
+        prefix: [String] = [],
+        suffix: [String] = [],
         period: Period? = nil
     ) {
         self.id = id
