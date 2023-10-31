@@ -43,6 +43,9 @@ final class Patient: Model, Content {
     @Field(key: "multiple_birth_integer")
     var multipleBirthInteger: Int?
 
+    @Field(key: "photo")
+    var photo: [Attachment]
+
     // TODO: Add remaining patient fields
 
     init() { }

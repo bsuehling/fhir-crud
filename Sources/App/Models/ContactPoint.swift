@@ -17,7 +17,7 @@ final class ContactPoint: Model, Content {
     var use: ContactPointUse?
 
     @Field(key: "rank")
-    var rank: Int?
+    var rank: UInt?
 
     @Field(key: "period")
     var period: Period?
@@ -29,7 +29,7 @@ final class ContactPoint: Model, Content {
         system: ContactPointSystem? = nil,
         value: String? = nil,
         use: ContactPointUse? = nil,
-        rank: Int? = nil,
+        rank: UInt? = nil,
         period: Period? = nil
     ) {
         self.id = id
