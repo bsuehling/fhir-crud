@@ -25,7 +25,7 @@ final class HumanName: Model, Content {
     @Field(key: "suffix")
     var suffix: [String]
 
-    @OptionalParent(key: "period_id")
+    @Field(key: "period")
     var period: Period?
 
     init() {}

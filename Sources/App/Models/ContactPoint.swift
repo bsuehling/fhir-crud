@@ -19,7 +19,7 @@ final class ContactPoint: Model, Content {
     @Field(key: "rank")
     var rank: Int?
 
-    @OptionalParent(key: "period_id")
+    @Field(key: "period")
     var period: Period?
 
     init() {}
